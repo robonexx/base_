@@ -1,0 +1,23 @@
+.nav-item {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+
+    .nav-links {
+        text-decoration: none;
+        font-size: 2rem;
+        font-weight: 800;
+        color: black;
+        padding-right: 30vw;
+
+    }
+
+    iframe {
+        background-color: transparent;
+
+        >html,body {
+            background: white;
+        }
+    }
+}
