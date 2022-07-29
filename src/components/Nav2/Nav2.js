@@ -10,7 +10,7 @@ export default function Nav2() {
 
    return (
     <div className='nav2'>
-         NAV2
+         <p>Im a nav on above the page</p>
         <button onClick={handleMenu}>Click</button>
         <div className={`${toggle ? 'nav2-menu open' : 'nav2-menu'}`}>
         {content.map(({url, title, id}) => (
