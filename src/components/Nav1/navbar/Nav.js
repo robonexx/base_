@@ -1,9 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { FiMenu } from 'react-icons/fi';
-import { FiX } from 'react-icons/fi';
-
 import NavBtn from '../navBtn/NavBtn';
-
 // styles
 import '../../../styles/components/Nav1/Navbar1.scss';
 import '../../../styles/components/Nav1/NavBtn1.scss';
@@ -16,10 +12,7 @@ export default function Nav(props) {
     setClick(!click);
     setNavActive(!click);
   };
-  /* const handleClick = () => setClick(!click); */
-
   const navRef = useRef();
-
   useEffect(() => {
     if (window.innerWidth > 959) {
       let prevScrollpos = window.pageYOffset;
@@ -47,15 +40,6 @@ export default function Nav(props) {
 
   return (
     <nav className='navbar' ref={navRef}>
-      {/* <div className={styles.menu_icon} onClick={handleClick}>
-        <div>
-          {click ? (
-            <FiX className={styles.nav_icon} />
-          ) : (
-            <FiMenu className={styles.nav_icon} />
-          )}
-        </div>
-      </div> */}
       <button className='menu_icon' onClick={handleClick}>
         <NavBtn navActive={navActive} />
       </button>

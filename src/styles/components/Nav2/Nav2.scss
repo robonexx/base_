@@ -1,0 +1,27 @@
+.nav2 {
+    width: 100%;
+    height: 100%;
+   
+
+    > button {
+        position: fixed;
+        top: 4rem;
+        right: 4rem;
+        z-index: 1000;
+        width: 100px;
+        height: 40px;
+
+    }
+}
+
+.nav2-menu {
+    width: 100%;
+    height: 100vh;
+    background-color: green;
+    transform: translateY(-105%);
+    transition: transform 0.4s ease-in-out;
+}
+
+.nav2-menu.open {
+    transform: translateY(0);
+}

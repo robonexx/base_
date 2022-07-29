@@ -4,12 +4,14 @@ import Home from './pages/Home/Home';
 import Page2 from './pages/Page2/Page2';
 import Page3 from './pages/Page3/Page3';
 import Page4 from './pages/Page4/Page4';
+import About from './pages/About/About';
 
 function App() {
   return (
     <div className="App">
       <Routes>
         <Route path='/' element={<Home />} />
+        <Route path='/about' element={<About />} />
         <Route path='/page2' element={<Page2 />} />
         <Route path='/page3' element={<Page3 />} />
         <Route path='/page4' element={<Page4 />} />
